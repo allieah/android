@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">restaurant</string>
+    <string name="test">welcome</string>
+    <string name="rname">Savoury</string>
+    <string name="start">Start</string>
+    <string name="b">Breakfast</string>
+    <string name="l">Lunch</string>
+    <string name="s">Snacks</string>
+    <string name="d">desserts</string>
+    <string name="back">back</string>
+    <string name="add">+ADD</string>
+    <string name="sub">-SUB</string>
+    <string name="pay">Pay</string>
+    <string name="bill">Get bill</string>
+    <string name="cancel">Cancel order</string>
+    <string name="order">Your order has been placed successfully!
+    Thank you</string>
+    <string-array name="payment"><item>UPI</item><item>cash on delivery</item><item>credit/debit card</item></string-array>
+</resources>

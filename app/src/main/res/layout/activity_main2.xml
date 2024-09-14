@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEAAAA"
+    android:backgroundTint="#FFFFFF"
+    android:contentDescription="breakfast"
+    android:focusable="auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9E9D9D"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:backgroundTint="#FFEADF">
+
+                <ImageButton
+                    android:id="@+id/breakfastV"
+                    android:layout_width="195dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="breakfast"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:srcCompat="@drawable/breakfast" />
+
+                <ImageButton
+                    android:id="@+id/lunchV"
+                    android:layout_width="195dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="lunch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/breakfastV"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:srcCompat="@drawable/lunch" />
+
+                <ImageButton
+                    android:id="@+id/snacksV"
+                    android:layout_width="195dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="snacks"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/breakfastV"
+                    app:srcCompat="@drawable/snacks" />
+
+                <ImageButton
+                    android:id="@+id/dessertsV"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="desserts"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/snacksV"
+                    app:layout_constraintTop_toBottomOf="@+id/lunchV"
+                    app:srcCompat="@drawable/desserts" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="427dp"
+                    android:layout_height="226dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/wel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

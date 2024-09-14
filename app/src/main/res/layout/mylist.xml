@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyListAdapter">
+
+    <ImageView
+        android:id="@+id/icons"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="72dp"
+        android:layout_height="113dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/icontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/iconprice"
+            android:layout_width="128dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textStyle="bold" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/pay"-->
+        <!--            android:layout_width="135dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginTop="80dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:backgroundTint="#FE5900"-->
+        <!--            android:text="@string/bill" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="114dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/add"
+            android:textColor="#FE5900"
+            app:cornerRadius="10dp"
+            app:iconTint="#D52C2C"
+            app:strokeColor="#C52323"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/sub"
+            android:textColor="#FE5900"
+            app:cornerRadius="10dp"
+            app:iconTint="#D52C2C"
+            app:strokeColor="#C52323"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
